@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learning Journey on Hugo Narrow</title>
+    <link>http://localhost:1313/tags/learning-journey/</link>
+    <description>Recent content in Learning Journey on Hugo Narrow</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 12 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/learning-journey/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Journey from Physical to Digital Architecture: Transitioning from Kitchen Installation to Cloud Computing</title>
+      <link>http://localhost:1313/posts/my-journey-from-physical-to-digital-architecture-transitioning-from-kitchen-installation-to-cloud-computing/</link>
+      <pubDate>Sat, 12 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/my-journey-from-physical-to-digital-architecture-transitioning-from-kitchen-installation-to-cloud-computing/</guid>
+      <description>&lt;p&gt;&#xD;&#xA;&lt;figure class=&#34;image-figure not-prose my-8&#34; &#xD;&#xA;        data-lightbox-enabled=&#34;false&#34;&#xD;&#xA;        data-gallery-type=&#34;auto&#34;&gt;&#xD;&#xA;  &lt;div class=&#34;image-container&#34;&gt;&#xD;&#xA;    &#xD;&#xA;    &lt;img&#xD;&#xA;      src=&#34;http://localhost:1313/images/download.png&#34;&#xD;&#xA;      alt=&#34;Transition from Kitchen Design to Cloud Architecture&#34;&#xD;&#xA;      &#xD;&#xA;      loading=&#34;lazy&#34;&#xD;&#xA;      decoding=&#34;async&#34;&#xD;&#xA;      data-gallery-src=&#34;http://localhost:1313/images/download.png&#34;&#xD;&#xA;      data-gallery-alt=&#34;Transition from Kitchen Design to Cloud Architecture&#34;&#xD;&#xA;      data-gallery-title=&#34;&#34; /&gt;&lt;/div&gt;&#xD;&#xA;&#xD;&#xA;  &lt;/figure&gt;&lt;/p&gt;&#xA;&lt;p&gt;As I recently earned my AWS Cloud Practitioner certification, I&amp;rsquo;ve been reflecting on the surprising parallels between my experience in kitchen installation and my new path in cloud engineering. While these fields might seem worlds apart, the underlying principles of design, structure, and problem-solving create a fascinating bridge between physical and digital architecture.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
