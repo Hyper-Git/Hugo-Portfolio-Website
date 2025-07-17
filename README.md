@@ -45,9 +45,10 @@ sudo apt install hugo
 hugo new site my-portfolio
 cd my-portfolio
 
-# Add a theme (optional)
+# Add Gugo Narrow Theme
 git init
-git submodule add https://github.com/themes/ananke themes/ananke
+git submodule add https://github.com/tom2almighty/hugo-narrow.git themes/hugo-narrow
+git submodule update --init --recursive --remote
 echo "theme = 'ananke'" >> config.toml
 
 # Create your first page
@@ -67,7 +68,7 @@ Visit `http://localhost:1313` to see your site!
 baseURL = 'https://your-domain.com'
 languageCode = 'en-us'
 title = 'Your Name - Portfolio'
-theme = 'ananke'
+theme = 'hugo-narrow'
 
 [params]
   description = "Web Developer Portfolio"
