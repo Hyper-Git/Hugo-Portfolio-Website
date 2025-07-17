@@ -13,16 +13,6 @@ A simple, fast portfolio website built with Hugo and deployed on AWS S3 + CloudF
 - **CloudFront** - Content delivery network
 - **Route 53** - DNS management
 
-## 📁 Project Structure
-
-portfolio-website/
-├── content/           # Your pages and blog posts
-├── layouts/           # HTML templates
-├── static/            # CSS, images, JavaScript
-├── themes/            # Hugo theme (if using one)
-├── config.toml        # Site configuration
-└── public/            # Generated site (don't commit this)
-
 ## 🏗 How to Build This Project
 
 ### Step 1: Install Hugo
