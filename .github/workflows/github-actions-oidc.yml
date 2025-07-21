@@ -1,0 +1,54 @@
+# Create a Hugo website deployment workflow
+name: Deploy Hugo Site to AWS S3 (OIDC)
+on:
+  push:
+    branches:
+      - main # Or your default branch
+  workflow_dispatch:
+    inputs:
+      description:
+        description: 'Optional description for the workflow run'
+        required: false
+        default: 'Deploying Hugo site to AWS S3'
+
+
+permissions:
+  id-token: write # Required for OIDC
+  contents: read
+  actions: read # Required for actions to run
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: 'recursive' # Important for themes
+          fetch-depth: 0 # Fetch all history for accurate versioning
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build Hugo site
+        run: hugo --minify
+
+      - name: Configure AWS Credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Deploy to S3
+        run: |
+          aws s3 sync public/ s3://${{ secrets.AWS_S3_BUCKET }}/ --delete --exact-timestamps --cache-control "max-age=3600, public"
+
+
+      - name: Invalidate CloudFront Cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
+
+        
