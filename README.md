@@ -114,22 +114,7 @@ hugo --minify
 5. **Keep "Block all public access" checked** (we'll use CloudFront OAC)
 6. **Click "Create bucket"**
 
-<<<<<<< HEAD
-### Step 2: Configure S3 for Website Hosting
-
-1. **Click on your bucket**
-2. **Go to "Properties" tab**
-3. **Scroll to "Static website hosting"**
-4. **Click "Edit"**
-5. **Enable static website hosting**
-6. **Index document:** `index.html`
-7. **Error document:** `404.html`
-8. **Click "Save changes"**
-
-### Step 3: Configure S3 Bucket for CloudFront Access
-=======
 ### Step 2: Configure S3 Bucket for CloudFront Access
->>>>>>> development
 
 1. **Go to "Permissions" tab**
 2. **Keep "Block all public access" enabled** (we'll use CloudFront with OAC instead)
@@ -137,24 +122,14 @@ hugo --minify
 
 > Note: We'll no longer use a public bucket policy as we'll secure the bucket with Origin Access Control (OAC)
 
-<<<<<<< HEAD
-### Step 4: Upload Your Website
-=======
 ### Step 3: Upload Your Website
->>>>>>> development
 
 1. **Go to "Objects" tab**
 2. **Click "Upload"**
 3. **Select all files from your `public/` folder**
 4. **Click "Upload"**
 
-<<<<<<< HEAD
-Your site is now live at the S3 website URL!
-
-### Step 5: Set Up Route 53 for Custom Domain
-=======
 ### Step 4: Set Up Route 53 for Custom Domain
->>>>>>> development
 
 1. **Go to AWS Console → Route 53**
 2. **Click "Hosted zones"**
@@ -164,22 +139,14 @@ Your site is now live at the S3 website URL!
 6. **Click "Create hosted zone"**
 7. **Note the NS (Name Server) records** - You'll need to update these at your domain registrar
 
-<<<<<<< HEAD
-### Step 6: Update Domain Registrar
-=======
 ### Step 5: Update Domain Registrar
->>>>>>> development
 
 1. **Log in to your domain registrar** (where you purchased your domain)
 2. **Find DNS/Nameserver settings**
 3. **Replace the nameservers with the four NS values from Route 53**
 4. **Save changes** (may take 24-48 hours to propagate)
 
-<<<<<<< HEAD
-### Step 7: Request SSL Certificate
-=======
 ### Step 6: Request SSL Certificate
->>>>>>> development
 
 1. **Go to AWS Console → Certificate Manager**
 2. **Ensure you're in the US East (N. Virginia) region** for CloudFront compatibility
@@ -191,11 +158,7 @@ Your site is now live at the S3 website URL!
 8. **Click "Create records in Route 53"** to automatically validate
 9. **Wait for certificate status to change to "Issued"**
 
-<<<<<<< HEAD
-### Step 8: Create CloudFront Function
-=======
 ### Step 7: Create CloudFront Function
->>>>>>> development
 
 1. **Go to AWS Console → CloudFront → Functions**
 2. **Click "Create function"**
@@ -224,11 +187,7 @@ function handler(event) {
 6.**Click "Save changes"**
 7.**Click "Publish"**
 
-<<<<<<< HEAD
 ### Step 9: Create CloudFront Distribution with OAC
-=======
-### Step 8: Create CloudFront Distribution with OAC
->>>>>>> development
 
 1. **Go to AWS Console → CloudFront**
 2. **Click "Create distribution"**
@@ -252,11 +211,7 @@ function handler(event) {
 
 **Wait 10-15 minutes** for deployment to complete.
 
-<<<<<<< HEAD
-### Step 10: Update S3 Bucket Policy
-=======
 ### Step 9: Update S3 Bucket Policy
->>>>>>> development
 
 After creating the CloudFront distribution with OAC, you'll see a policy warning in the CloudFront console. Click "Copy Policy" and:
 
@@ -289,11 +244,7 @@ After creating the CloudFront distribution with OAC, you'll see a policy warning
 
 5.**Click "Save changes"**
 
-<<<<<<< HEAD
-### Step 11: Create Route 53 Record for CloudFront
-=======
 ### Step 10: Create Route 53 Record for CloudFront
->>>>>>> development
 
 1. **Go to Route 53 → Hosted zones → Your domain**
 2. **Click "Create record"**
@@ -306,11 +257,7 @@ After creating the CloudFront distribution with OAC, you'll see a policy warning
    - **Record name:** `www`
    - Follow the same steps as above
 
-<<<<<<< HEAD
-### Step 12: Update Your Site
-=======
 ### Step 11: Update Your Site
->>>>>>> development
 
 When you make changes:
 
@@ -426,8 +373,6 @@ Portfolio: [cornelcloud.net](https://cornelcloud.net)
 - **Cost-Effective Hosting** solution
 
 This project shows how to build and deploy a professional website using modern tools and cloud infrastructure with enhanced security and performance.
-<<<<<<< HEAD
-=======
 
 ---
 
@@ -547,4 +492,3 @@ jobs:
 ```
 
 Now, every time you push changes to your `main` branch, this workflow will securely authenticate with AWS using OIDC, build your Hugo site, upload the files to S3, and invalidate the CloudFront cache.
->>>>>>> development
