@@ -191,11 +191,7 @@ function handler(event) {
 6.**Click "Save changes"**
 7.**Click "Publish"**
 
-<<<<<<< HEAD
-### Step 9: Create CloudFront Distribution with OAC
-=======
 ### Step 8: Create CloudFront Distribution with OAC
->>>>>>> development
 
 1. **Go to AWS Console → CloudFront**
 2. **Click "Create distribution"**
@@ -500,6 +496,3 @@ jobs:
 ```
 
 Now, every time you push changes to your `main` branch, this workflow will securely authenticate with AWS using OIDC, build your Hugo site, upload the files to S3, and invalidate the CloudFront cache.
->>>>>>> development
-
-[def]: ./static/images/enhanced_static_website_architecture_with_github_actions_(a3).png
