@@ -17,6 +17,10 @@ A simple, fast portfolio website built with Hugo and deployed on AWS S3 + CloudF
 
 ## 🏗 How to Build This Project
 
+### Architecture Diagram
+
+![Deployment Diagram](./static/images/enhanced_static_website_architecture_with_github_actions_(a3).png)
+
 ### Step 1: Install Hugo
 
 **Windows:**
@@ -492,3 +496,6 @@ jobs:
 ```
 
 Now, every time you push changes to your `main` branch, this workflow will securely authenticate with AWS using OIDC, build your Hugo site, upload the files to S3, and invalidate the CloudFront cache.
+
+
+[def]: ./static/images/enhanced_static_website_architecture_with_github_actions_(a3).png

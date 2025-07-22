@@ -44,8 +44,8 @@ I built this portfolio website using Hugo and deployed it to AWS using:
 
 ## Links
 
-- [Live Website](https://your-domain.com)
-- [GitHub Repository](https://github.com/yourusername/portfolio)
+- [Live Website](https://cornelcloud.net)
+- [GitHub Repository](https://github.com/Hyper-Git/Hugo-Portfolio-Website)
 
 ---
 
