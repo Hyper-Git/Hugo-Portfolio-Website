@@ -1,44 +1,69 @@
-# About Me
-
+---
 date: 2025-07-12
 draft: false
+---
 
-Hello! I'm Cornel, a passionate Cloud Practitioner with a love for technology and continuous learning.
+# About Me
 
-## Background
+Hello! I’m Cornel — a career-changer with a growing passion for cloud technology and artificial intelligence. I’m committed to building a future in tech and currently transitioning into the cloud industry through hands-on learning and real-world projects.
 
-I'm currently exploring cloud technologies and building my skills in:
+---
 
-- AWS Cloud Services
-- Web Development
-- [Other relevant skills]
+## My Journey
 
-## Current Focus
+Coming from a non-technical background, I’ve taken the leap into the IT world out of a genuine passion for technology. After completing the **Fast Track IT Course** (ITOL Accredited), I enrolled in the **AWS re/Start Program**, where I'm gaining practical experience with cloud infrastructure, networking, security, and scripting using AWS services.
 
-Right now, I'm working on:
+---
 
-- Building static websites with Hugo
-- Learning AWS services like S3, CloudFront, and Route 53
-- Creating a portfolio to showcase my projects
+## My Goal
+
+I’m working towards an entry-level role such as **Cloud Support Associate** or **Junior Cloud Engineer**. I’m particularly interested in how **AI can be integrated into cloud platforms**, and I’m excited to be part of the future of cloud and intelligent automation.
+
+---
+
+## What I'm Working On
+
+- Transitioning into the cloud industry through structured learning and projects  
+- Hosting and deploying static websites using **Hugo**, **GitHub Actions**, **Amazon S3**, **CloudFront**, and **Route 53**  
+- Exploring **IAM**, **OIDC integration**, **CloudFront Functions**, and **secure architecture practices**  
+- Creating this portfolio to showcase my journey and ongoing learning
+
+---
 
 ## Skills
 
-**Technical Skills:**
+### Technical Skills
 
-- Programming Languages: [List your languages]
-- Cloud Platforms: AWS (learning)
-- Tools & Technologies: [List relevant tools]
+- **Programming**: Python (beginner)  
+- **Cloud**: AWS (Cloud Practitioner certified; AWS re/Start in progress)  
+- **Tools**: Git & GitHub, Hugo, GitHub Actions, AWS CLI, VS Code, Linux (basic)
 
-**Other Skills:**
+### Interests
 
-- [Soft skills, languages, etc.]
+- Cloud Computing & DevOps  
+- AI integration and cloud automation  
+- Continuous learning & hands-on practice
 
-## Contact
+### Soft Skills
 
-Feel free to reach out to me:
-
-- Email: <cornelbacanu@gmail.com>
-- GitHub: <https://github.com/Hyper-Git>
-- LinkedIn: [linkedin.com/in/cornel-bacanu-b7138032a](https://www.linkedin.com/in/cornel-bacanu-b7138032a)
+- Fast learner with a growth mindset  
+- Strong communicator and team player  
+- Problem-solver with initiative  
+- Fluent in English and Romanian
 
 ---
+
+## Projects
+
+- **Static Website Hosting on AWS** – Deployed a personal portfolio site using Hugo, GitHub Actions, Amazon S3, CloudFront, and Route 53  
+- *(More projects coming soon as I continue learning and building)*
+
+---
+
+## Let’s Connect
+
+I’m currently open to **entry-level opportunities**, **internships**, or **junior roles** in cloud or AI-related fields.
+
+- 📧 **Email**: <cornelbacanu@gmail.com>  
+- 🧑‍💻 **GitHub**: [Hyper-Git](https://github.com/Hyper-Git)  
+- 💼 **LinkedIn**: [Cornel Bacanu](https://linkedin.com/in/cornel-bacanu-b7138032a)
